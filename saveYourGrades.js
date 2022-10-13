@@ -3,7 +3,14 @@
 function saveYourGrades (){
     grades.push()
 
+    // DB -> Data base
+   
+
+
+
     console.log(grades)
 }
 
-saveYourGrades()
+export {saveYourGrades}
+
+

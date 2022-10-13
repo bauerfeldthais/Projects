@@ -1,4 +1,4 @@
-let grades = []
+
 // aqui iria inserir de maneira manual
 
 
@@ -14,11 +14,15 @@ function average(grades){
 	return result / grades.length
 }
 
-
-//faria a avaliação de o aluno foi aprovado ou não
-let calculateAverage = average(grades);
-if (calculateAverage < 7) {
-    console.log(`Reprovado! Sua média foi de ` +  calculateAverage);
-} else {
-    console.log(`Aprovado! Sua média foi de ` + calculateAverage);
+function hasPassed() {
+    //faria a avaliação de o aluno foi aprovado ou não
+    let calculateAverage = average(grades);
+    if (calculateAverage < 7) {
+        console.log(`Reprovado! Sua média foi de ` +  calculateAverage);
+    } else {
+        console.log(`Aprovado! Sua média foi de ` + calculateAverage);
+    }
 }
+
+
+export { average, hasPassed }
