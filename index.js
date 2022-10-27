@@ -101,3 +101,6 @@ let grades = [
 saveYourGrades(9);
 saveYourGrades(8);
 saveYourGrades(10);
+
+import {Student} from '?'
+import {average, hasPassed} from '?'
