@@ -12,6 +12,7 @@ Projetos em desenvolvimento
     
     - calcular as médias
     //function average
+    
     - verificar quem passou
     //function hasPassed()
         
