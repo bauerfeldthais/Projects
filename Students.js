@@ -1,4 +1,4 @@
-class Student{
+export class Student{
 	//nome, idade, gênero, ano,
 	/**
 	 * Student's name
