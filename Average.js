@@ -2,7 +2,7 @@
 // aqui iria inserir de maneira manual
 
 
-function average(grades){
+export function average(grades){
 	if(grades.length == 0)
         return 0;
     
@@ -14,7 +14,7 @@ function average(grades){
 	return result / grades.length
 }
 
-function hasPassed() {
+export function hasPassed() {
     //faria a avaliação de o aluno foi aprovado ou não
     let calculateAverage = average(grades);
     if (calculateAverage < 7) {
@@ -24,5 +24,3 @@ function hasPassed() {
     }
 }
 
-
-export { average, hasPassed }
