@@ -1,4 +1,4 @@
-export class Student{
+export default class Student{
 	//nome, idade, gênero, ano,
 	/**
 	 * Student's name
@@ -42,4 +42,5 @@ export class Student{
 		//logic to get year enrolled with
 		return grade
 	};
+
 }

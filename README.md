@@ -19,3 +19,8 @@ Projetos em desenvolvimento
     - imprimir as notas
     
     - imprimir quem passou
+
+### Task - 2022/10/27:
+    - Implement average calc for each classroom;
+    or
+    - Start planning project structure;

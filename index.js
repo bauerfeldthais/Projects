@@ -52,8 +52,6 @@ let grades = [
     ]      
 ];
 
-
-
 // grades[0][0] => 'nome do aluno1';
 // grades[0][1][1][0] => 'matemática';
 // grades[0][1][1][1] => [9,0,2];
@@ -97,10 +95,24 @@ let grades = [
 
 // grades[0][1][1][1][2] => 2
 
-
 saveYourGrades(9);
 saveYourGrades(8);
 saveYourGrades(10);
 
-import {Student} from '?'
-import {average, hasPassed} from '?'
+import Student from './Students.js'
+import {average, hasPassed} from './average.js'
+
+// - receber as notas
+
+    
+// - calcular as médias
+average()
+
+
+// - verificar quem passou
+// //function hasPassed()
+    
+// - imprimir as notas
+
+
+// - imprimir quem passou

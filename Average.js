@@ -1,8 +1,12 @@
 
 // aqui iria inserir de maneira manual
 
-
-export function average(grades){
+/**
+ * 
+ * @param {number[]} grades 
+ * @returns {number}
+ */
+export function average(grades){ 
 	if(grades.length == 0)
         return 0;
     
@@ -23,4 +27,14 @@ export function hasPassed() {
         console.log(`Aprovado! Sua média foi de ` + calculateAverage);
     }
 }
+
+/**
+ * Get grades from a student by materia
+ * 
+ * @param {Student} student
+ * @param {string} name
+ * 
+ * @return {number} 
+ */
+export function extractGradesByMateria(student, name){}
 
