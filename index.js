@@ -5,6 +5,7 @@ let grades = [
             [
                 'historia',
                 [10]
+                //encontrar uma maneira de que quando o aluno não receba nenhuma nota, automaticamente receba um 0
             ],
             [
                 'matemática',
