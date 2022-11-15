@@ -1,0 +1,88 @@
+<html>
+    <head>
+        <link rel="javascript" src="./app.js">
+
+        <title>Hello World</title>
+        <link rel="icon" type="image/x-icon" href="./smile.jpg">
+        <style>
+            body {
+                background-color: #dad7db;
+                font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+                color: white;
+                display: block;
+            }
+            h1, h2{
+                color: black;
+            }
+            h2 {
+                text-shadow:  1px 1px black;
+            }
+            form{
+                display: block;
+                border: 10px dashed white;
+                padding: 10px;
+            }
+            
+
+
+            .maindiv{
+                background: red;
+                display: flex;
+                padding: 20px;
+            }
+
+            .maindiv div:first-child{
+                background: green;
+            }
+
+            .maindiv div:last-child{
+                background: blue;
+            }
+
+            p { border: 1px black dashed;}
+
+            body div div {
+                margin: 20px;                
+                transition: all ease-in-out .3s;
+            }
+            
+            .half{
+                width: 50%;
+            }
+ 
+
+            .hovered:hover{
+                width: 60%;
+                border: 5px solid black;
+            }
+
+            body div div:hover {
+                margin: 20px 10px;                
+                transform: rotateX(2.3)                
+            }
+
+        </style>
+    </head>
+    <body>
+        <h1>Hello World!</h1>
+        <div class="maindiv">            
+            <div class="half hovered">
+                <p>verde</p>
+            </div>
+            <div class="half hovered row black">
+                <p>azul</p>
+                
+            </div>
+        </div>
+
+        <a href="test-page.html">Test Page</a>
+        
+    </body>
+    <script type="text/javascript">
+        let count = 1;
+        function showAlert() {
+            alert('Mahoi!! ] '+count)
+            count++;
+        }
+    </script>
+</html>

@@ -102,15 +102,40 @@ saveYourGrades(10);
 
 import Student from './Students.js'
 import {average, hasPassed} from './average.js'
+import {transformStudents} from './transformStudents.js'
+import SchoolSubject from './SchoolSubject.js';
 
 // - receber as notas
-
+    // ter uma variável principal
+    // converer dadso para instancias de Student
+    // dividir notas por alunos e classes
+    const students = transformStudents(grades);
     
 // - calcular as médias
-average()
+    const countStudents = students.length
+
+    // loop para cálculo de cada aluno
+    for( let i = 0; i < countStudents; i++){
+        const student = students[i];
+
+        // loop para cada schoolSubject
+        const schoolSubjects = student.getSchoolSubjects()
+        const schoolSubjectLength = schoolSubjects.length
+        
+        for( let j = 0; j < schoolSubjectLength ; j++){
+            const schoolSubject = schoolSubjects[j]
+            average(schoolSubject.getGrades())
+        }
+
+    }
 
 
+
+
+// **Parte do aluno como foco
 // - verificar quem passou
+    // dividir lista em duas
+
 // //function hasPassed()
     
 // - imprimir as notas

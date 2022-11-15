@@ -28,19 +28,22 @@ export default class Student{
 	 */
 	grade;
 
+
+    schoolSubjects = [];
+
 	/**
 	 * Subjects that the student are enrol with.
 	 * 
 	 * @returns {string[]}
 	 */
-	schoolSubjects(){
+	getSchoolSubjects(){
 		//logic to get subjects enrolled with.
-		const subjects = ['Math', 'History', 'English', 'Portuguese', 'Biology', 'Chemistry', 'Geography']
-		return subjects 
+		// const subjects = ['Math', 'History', 'English', 'Portuguese', 'Biology', 'Chemistry', 'Geography']
+		return this.schoolSubjects 
 	};
-	gradeEnrolled(){
-		//logic to get year enrolled with
-		return grade
-	};
+	// classroomEnrolled(){
+	// 	//logic to get year enrolled with
+	// 	return grade
+	// };
 
 }

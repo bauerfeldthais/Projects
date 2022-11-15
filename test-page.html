@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Histórico Escolar</title>
+    <style> 
+        body{
+            background-color: #B396A5;
+            padding: 0;
+            margin: 0;
+            text-align: center;
+            color: #1A0333;
+        }
+        h1 {
+            margin: 10;
+            padding: 5px 0;
+        }
+        img {
+            display: block;
+            margin: 0 auto;
+        }
+        form {
+            max-width: 50%;
+            margin: 50px auto;
+            padding: 15px;
+            border: 1px solid black;
+            box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.5);
+            
+        }
+        .hide {
+            display: none;
+        }
+    </style>
+
+    <script>
+        // alert('algo')
+    </script>
+  </head>
+  <body>
+    <h1>Histórico Escolar</h1>
+    <img src="https://escolas.aglousa.com/wp-content/uploads/2020/07/alunos.jpg"
+         widht="300"
+         height="200"
+         title="Alunos em uma sala de aula">
+    <p onclick="myClick()" >Modelo de página para aprendizado em front-end</p>
+
+    <form onsubmit="event.preventDefault(), sendForm(event)">
+        <input id="name" name="name" type="text">
+        <input id="email" name="email" type="text">
+        <button type="submit">Enviar</button>
+    </form>
+
+    <p id="answer">
+
+    </p>
+
+    <footer>
+
+        <script>
+            function myClick() {
+                alert('clicou')                
+            }
+
+            let counter = 1
+
+            function sendForm(e) {
+                console.log(e)
+
+                const nameInput = document.getElementById('name')
+                // console.log('My name is: ' + nameInput.value)
+
+                const emailInput = document.getElementById('email')
+                // console.log('My email is: ' + emailInput.value)
+
+                let text = 'Welcome ' + nameInput.value + '!'
+                text += '<br>';
+                text += 'An email was sent to address ' + emailInput.value;
+                text += '. Please confirm to continue to login.'
+
+                const answerComponent = document.getElementById('answer');
+                answerComponent.innerHTML = text
+
+                let a = 42
+                a = 320
+
+                // e.target.style.display = 'none'
+                
+
+                const newDiv = document.createElement('div');
+                newDiv.style.background = 'red'
+                newDiv.style.width ='100px'
+                newDiv.style.height ='100px'
+                newDiv.innerHTML = '<p>' + counter + '</p>'
+
+                counter++;
+
+
+                const newInput = document.createElement('input');
+
+                answerComponent.parentElement.prepend(newInput)
+                answerComponent.parentElement.prepend(newDiv)
+                answerComponent.parentElement.append(emailInput)
+                answerComponent.parentElement.append(nameInput)
+
+            }
+        </script>
+    </footer>
+  </body>
+
+
+</html>
