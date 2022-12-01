@@ -132,7 +132,7 @@
             display: block;
             margin: 0 auto;
         }
-        form {
+        form1 {
             max-width: 50%;
             margin: 50px auto;
             padding: 15px;
@@ -143,6 +143,25 @@
         .hide {
             display: none;
         }
+       form {
+            max-width: 15%;
+            margin: 50px auto;
+            padding: 15px;
+            border: 1px solid black;
+            box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.5);
+            
+        }
+      input, textarea {
+            font: 1em sans-serif;
+            width: 250px;
+            -moz-box-sizing: border-box;
+            box-sizing: border-box;
+            border: 1px solid #999;
+        }
+      input:focus, textarea:focus {
+            border-color: #000;
+        }
+      
     </style>
   </head>
    <body>
@@ -152,22 +171,20 @@
          height="200"
          title="Alunos em uma sala de aula">
     <p onclick="myClick()" >Modelo de página para aprendizado em front-end</p>
-    <form>
+    <form1> 
     Aluno: <input type="search" name="q">
       <button type="submit">Buscar</button>
-    </form>
-     <p id="answer">
-
-    </p>
+    </form1>
+     <br>
+     <br>
+     <br>
     <form>
     Aluno: <input type="text" name="student"><br>
     Matéria: <input type="text" name="suject"><br>
     Nota: <input type="text" name="rating">
+     <br>
     <button type="submit">Enviar</button>
     </form>
-    <p id="answer">
-            
-    </p>
-     
+   
 </html>
      
